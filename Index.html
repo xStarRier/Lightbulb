@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.On{
+background-color:rgb(233, 241, 109);
+}
+.lightBulb{ 
+ background-color:grey;
+ position: relative;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ margin: -50px auto 0;
+ margin-top: 40px;
+ cursor: pointer;
+}
+</style>
+<body>
+<div id="bulb" class="lightBulb" onclick="lightItDown()"></div>
+
+<script>
+var lightBulbV = true;
+var darkBulbV = false;
+
+//here you get functions to turn off and on
+
+function lightItDown(){
+if(lightBulbV == true){
+    document.getElementById('bulb').style.backgroundColor = 'rgb('+ 233 + ',' + 241 + ',' + 109 +')';
+    lightBulbV = false;
+    darkBulbV = true;
+}else if(darkBulbV == true){
+    document.getElementById('bulb').style.backgroundColor = 'grey'
+    lightBulbV = true;
+    darkBulbV = false;
+}
+}
+
+</script>
+</body>
+</html>
